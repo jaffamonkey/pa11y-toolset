@@ -27,11 +27,13 @@ require('./app')(config, (error, app) => {
 		console.error(error.stack);
 		process.exit(1);
 	}
+	const address = app.server.address();
 
 	console.log('');
 	console.log(kleur.underline().magenta('Pa11y Dashboard started'));
+	console.log(kleur.underline().green(`Listening on http://localhost:${address.port}`));
 	console.log(kleur.grey('mode: %s'), process.env.NODE_ENV);
-	console.log(kleur.grey('uri:  %s'), app.address);
+	// Console.log(kleur.grey('uri:  %s'), app.address);
 
 	app.on('route-error', error => {
 		const stack = (error.stack ? error.stack.split('\n') : [error.message]);
