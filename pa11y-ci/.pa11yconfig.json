@@ -8,6 +8,9 @@
       "standard": "WCAG2AA",
       "runners": [
         "htmlcs"
+      ],
+      "reporters": [
+        "pa11y-ci-reporter-html"
       ]
     }
   }

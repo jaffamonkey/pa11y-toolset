@@ -2,7 +2,7 @@
 
 **Required: NodeJS**
 
-`npm install`
+`npm install -g pa11y`
 
 > Install local version is permissions issues when trying this on build environment(s)
 

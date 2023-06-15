@@ -11,6 +11,7 @@ runExample();
 async function runExample() {
 	try {
 		const result = await pa11y('https://tangerine-mousse-0f9104.netlify.app', {
+			reporters: `pa11y-reporter-html`,
 			screenCapture: `${__dirname}/login.png`,
 			// Run some actions before the tests
 			actions: [
