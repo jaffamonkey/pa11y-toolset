@@ -34,7 +34,6 @@
     "morgan": "~1.10.0",
     "nanoid": "~3.3.2",
     "pa11y": "latest",
-    "pa11y-ci": "latest",
     "pa11y-reporter-html": "^2.0.0",
     "pa11y-webservice": "4.1.0",
     "pa11y-webservice-client-node": "~3.0.0",

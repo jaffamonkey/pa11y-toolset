@@ -1,16 +1,5 @@
 # Pa11y Dashboard
 
-Pa11y Dashboard is a web interface to the [Pa11y][pa11y] accessibility reporter; allowing you to focus on *fixing* issues rather than hunting them down.
-
-![Version][shield-version]
-[![Node.js version support][shield-node]][info-node]
-[![Build status][shield-build]][info-build]
-[![GPL-3.0 licensed][shield-license]][info-license]
-
-![dashboard](https://user-images.githubusercontent.com/6110968/61603347-0bce1000-abf2-11e9-87b2-a53f91d315bb.jpg)
-![results-page](https://user-images.githubusercontent.com/6110968/62183438-05851580-b30f-11e9-9bc4-b6a4823ae9e8.jpg)
-
----
 
 ## Requirements
 
@@ -131,35 +120,6 @@ The boot configurations for Pa11y Dashboard are as follows. Look at the sample J
 
 This can either be an object containing [Pa11y Webservice configurations][pa11y-webservice-config], or a string which is the base URL of a [Pa11y Webservice][pa11y-webservice] instance you are running separately. If using environment variables, prefix the webservice vars with `WEBSERVICE_`.
 
-## Contributing
-
-There are many ways to contribute to Pa11y Dashboard, we cover these in the [contributing guide](CONTRIBUTING.md) for this repo.
-
-If you're ready to contribute some code, you'll need to clone the repo and get set up as outlined in the [setup guide](#setup). You'll then need to start the application in test mode with:
-
-```sh
-NODE_ENV=test node index.js
-```
-
-You'll now be able to run the following commands:
-
-```sh
-make verify              # Verify all of the code (ESLint)
-make test                # Run all tests
-make test-integration    # Run the integration tests
-```
-
-To compile the client-side JavaScript and CSS, you'll need the following commands. Compiled code is committed to the repository.
-
-```sh
-make less    # Compile the site CSS from LESS files
-make uglify  # Compile and uglify the client-side JavaScript
-```
-
-## Useful resources
-
-* [Setting up An Accessibility Dashboard from Scratch with Pa11y on DigitalOcean](https://una.im/pa11y-dash/)
-* [Monitoring Web Accessibility Compliance With Pa11y Dashboard](https://www.lullabot.com/articles/monitoring-web-accessibility-compliance-with-pa11y-dashboard)
 
 ## Troubleshooting
 
@@ -171,38 +131,3 @@ make uglify  # Compile and uglify the client-side JavaScript
 ### Create a new issue
 
 Check the [issue tracker][issues] for similar issues before creating a new one. If the problem that you're experiencing is not covered by one of the existing issues, you can [create a new issue][create-issue]. Please include your node.js and MongoDB version numbers, and your operating system, as well as any information that may be useful in debugging the issue.
-
-## Support and Migration
-
-Pa11y Dashboard major versions are normally supported for 6 months after their last minor release. This means that patch-level changes will be added and bugs will be fixed. The table below outlines the end-of-support dates for major versions, and the last minor release for that version.
-
-We also maintain a [migration guide](MIGRATION.md) to help you migrate.
-
-| :grey_question: | Major Version | Last Minor Release | Node.js Versions | Support End Date |
-| :-------------- | :------------ | :----------------- | :--------------- | :--------------- |
-| :heart:         | 4             | N/A                | 12+              | N/A              |
-| :hourglass:     | 3             | 3.3.0              | 8+               | 2022-05-26       |
-| :skull:         | 2             | 2.4.2              | 4+               | 2020-01-16       |
-| :skull:         | 1             | 1.12               | 0.10–6           | 2016-12-05       |
-
-If you're opening issues related to these, please mention the version that the issue relates to.
-
-## License
-
-Pa11y Dashboard is licensed under the [GNU General Public License 3.0][info-license].<br/>
-Copyright &copy; 2013–2020, Team Pa11y and contributors
-
-[gpl]: http://www.gnu.org/licenses/gpl-3.0.html
-[mongo]: http://www.mongodb.org/
-[node]: http://nodejs.org/
-[pa11y]: https://github.com/pa11y/pa11y
-[pa11y-webservice-config]: https://github.com/pa11y/webservice#configurations
-[issues]: https://github.com/pa11y/pa11y-dashboard/issues?utf8=%E2%9C%93&q=is%3Aissue
-[create-issue]: https://github.com/pa11y/pa11y-dashboard/issues/new
-[info-node]: package.json
-[info-build]: https://travis-ci.org/pa11y/pa11y-dashboard
-[info-license]: LICENSE
-[shield-version]: https://img.shields.io/github/package-json/v/pa11y/pa11y-dashboard.svg
-[shield-node]: https://img.shields.io/node/v/pa11y/pa11y-dashboard.svg
-[shield-build]: https://img.shields.io/travis/pa11y/pa11y-dashboard/master.svg
-[shield-license]: https://img.shields.io/badge/license-GPL%203.0-blue.svg
