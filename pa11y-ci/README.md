@@ -11,7 +11,4 @@ npm install -g pa11y-ci-reporter-html
 
 ### Run a test
 
-#### Output to console
 `pa11y-ci --config .pa11yconfig.json --sitemap https://pa11y.org/sitemap.xml`
-#### Output to html
-`pa11y-ci --config .pa11yconfig.json --reporter=pa11y-reporter-html --sitemap https://pa11y.org/sitemap.xml`
