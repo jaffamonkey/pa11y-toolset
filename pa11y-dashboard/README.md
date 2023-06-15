@@ -1,11 +1,6 @@
 # Pa11y Dashboard
 
-
 ## Requirements
-
-Pa11y Dashboard is a [Node.js][node] application and requires a stable or LTS version of Node, currently version 12 or 14.
-
-⚠️ At the moment, Pa11y Dashboard won't work with Node.js v16. Please use Node.js 12 or 14. ⚠️
 
 Pa11y Dashboard uses a [MongoDB][mongo] database to store the results of the tests. The database doesn't have to be in the same server or computer where Pa11y Dashboard is running from.
 
@@ -115,10 +110,6 @@ The boot configurations for Pa11y Dashboard are as follows. Look at the sample J
 ### siteMessage
 
 *(string)* A message to display prominently on the site home page. Defaults to `null`.
-
-### webservice
-
-This can either be an object containing [Pa11y Webservice configurations][pa11y-webservice-config], or a string which is the base URL of a [Pa11y Webservice][pa11y-webservice] instance you are running separately. If using environment variables, prefix the webservice vars with `WEBSERVICE_`.
 
 
 ## Troubleshooting
