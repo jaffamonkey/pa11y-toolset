@@ -8,17 +8,13 @@
     "analysis",
     "report"
   ],
-  "author": "Team Pa11y",
-  "contributors": [
-    "Perry Harlock (http://www.phwebs.co.uk/)",
-    "Rowan Manning (http://rowanmanning.com/)"
-  ],
+  "author": "Paul Littlebury",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pa11y/dashboard.git"
+    "url": "https://github.com/jaffamonkey/pa11y-toolset.git"
   },
-  "homepage": "https://github.com/pa11y/dashboard",
-  "bugs": "https://github.com/pa11y/dashboard/issues",
+  "homepage": "https://github.com/jaffamonkey/pa11y-toolset",
+  "bugs": "https://github.com/jaffamonkey/pa11y-toolset/issues",
   "license": "GPL-3.0",
   "engines": {
     "node": ">=12 <20"
