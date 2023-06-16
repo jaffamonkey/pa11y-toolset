@@ -121,6 +121,3 @@ The boot configurations for Pa11y Dashboard are as follows. Look at the sample J
 * `500` errors or `Could not connect to pa11y-webservice` messages are often related to MongoDB. Ensure that you have the [appropriate version of MongoDB][#installing-mongodb] installed, and that it's running - it doesn't always start automatically.
 * Error messages saying that pa11y-webservice isn't running may be due to dependency installation problems. Try deleting your `pa11y-dashboard/node_modules` directory and running `npm install` again.
 
-### Create a new issue
-
-Check the [issue tracker][issues] for similar issues before creating a new one. If the problem that you're experiencing is not covered by one of the existing issues, you can [create a new issue][create-issue]. Please include your node.js and MongoDB version numbers, and your operating system, as well as any information that may be useful in debugging the issue.

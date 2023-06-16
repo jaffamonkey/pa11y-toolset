@@ -17,4 +17,4 @@ npm install -g pa11y-ci-reporter-html
 
 #### Against a url
 
-`pa11y-ci --config .pa11yconfig.json https://jaffamonkey.com`
+`pa11y-ci --config .pa11yconfig.json https://practicetestautomation.com/practice-test-login`

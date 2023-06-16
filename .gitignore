@@ -1,0 +1,8 @@
+pa11y/*lock.json
+pa11y-ci/*lock.json
+pa11y-dashboard/*lock.json
+pa11y-dashboard/yarn.lock
+pa11y/node_modules
+pa11y-ci/node_modules
+pa11y-dashboard/node_modules
+.DS_Store

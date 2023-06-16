@@ -10,15 +10,15 @@ runExample();
 // Async function required for us to use await
 async function runExample() {
 	try {
-		const result = await pa11y('https://tangerine-mousse-0f9104.netlify.app', {
+		const result = await pa11y('https://practicetestautomation.com/practice-test-login/', {
 			reporters: `pa11y-reporter-html`,
 			screenCapture: `${__dirname}/login.png`,
 			// Run some actions before the tests
 			actions: [
-				'set field #username to testuser',
-				'set field #password to testpassword',
-				'click element #login',
-				// 'wait for url to be https://tangerine-mousse-0f9104.netlify.app'
+				'set field #username to student',
+				'set field #password to Password123',
+				'click element #submit',
+				'wait for url to be https://practicetestautomation.com/logged-in-successfully/'
 			],
 
 			// Log what's happening to the console
